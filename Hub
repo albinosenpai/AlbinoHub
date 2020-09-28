@@ -1,0 +1,40 @@
+game.StarterGui:SetCore("SendNotification", {
+Title = "Printing Games";
+Text = "Check F9";
+Icon = ""; 
+Duration = 5;
+})
+print("Supported Games")
+print("Sword Simulator 3")
+print("Chaos Clickers")
+wait(5)
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "Scanning Game";
+Text = "Finding GameId";
+Icon = ""; 
+Duration = 5;
+})
+wait(5)
+
+if game.PlaceId == 5123763375 then
+game.StarterGui:SetCore("SendNotification", {
+Title = "Game Found";
+Text = "Sword Simulator 3";
+Icon = ""; 
+Duration = 5;
+})
+wait(5)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/albinosenpai/Sword-Simulator-3/master/final'))()
+end
+
+if if game.PlaceId == 5531544242 then
+game.StarterGui:SetCore("SendNotification", {
+Title = "Game Found";
+Text = "Chaos Clicker";
+Icon = ""; 
+Duration = 5;
+})
+wait(5)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/albinosenpai/Chaos-Clicker/master/Chaos%20Clicker'))()
+end
